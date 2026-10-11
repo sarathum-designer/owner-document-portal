@@ -1,6 +1,11 @@
 {
   "version": 2,
   "rewrites": [
+    { "source": "/api/admin-bills",  "destination": "/api/records?op=admin-bills" },
+    { "source": "/api/my-bills",     "destination": "/api/records?op=my-bills" },
+    { "source": "/api/approve-bill", "destination": "/api/records?op=approve-bill" },
+    { "source": "/api/confirm-bill", "destination": "/api/records?op=confirm-bill" },
+    { "source": "/api/verify-doc",   "destination": "/api/records?op=verify-doc" },
     { "source": "/api/(.*)", "destination": "/api/$1" }
   ],
   "headers": [

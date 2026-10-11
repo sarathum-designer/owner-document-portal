@@ -13,6 +13,16 @@ A secure web portal where property owners upload and track verification document
 
 `Supabase` · `Vercel Serverless Functions` · `bcryptjs` · `jsonwebtoken` · HTML/CSS/JS
 
+## Project structure
+
+```text
+index.html, customer.html, admin.html   Login, owner portal and admin console
+css/, js/                               Page styles and scripts
+api/                                    Vercel serverless functions
+api/records.js                          One function serving the bill and document-review routes
+api/_*.js                               Shared helpers and route handlers (not deployed as separate functions)
+```
+
 ## Setup
 
 1. Create a Supabase project and run `supabase-setup.sql`, then `bill-migration.sql`, in its SQL editor.
